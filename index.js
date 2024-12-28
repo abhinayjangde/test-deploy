@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express()
-process.loadEnvFile()
+require('dotenv').config()
 const port = process.env.PORT ?? 3001
 
 app.get("/",(req,res)=>{

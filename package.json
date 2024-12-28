@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "start":"node index.js"
+    "start": "node index.js"
   },
   "keywords": [
     "express",
@@ -15,6 +15,7 @@
   "license": "ISC",
   "thread": 4,
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^5.0.1"
   },
   "devDependencies": {
