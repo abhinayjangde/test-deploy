@@ -1,0 +1,23 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "description": "my first backend project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start":"node index.js"
+  },
+  "keywords": [
+    "express",
+    "nodejs"
+  ],
+  "author": "Abhinay Jangde",
+  "license": "ISC",
+  "thread": 4,
+  "dependencies": {
+    "express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
