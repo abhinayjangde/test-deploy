@@ -3,6 +3,12 @@ const app = express()
 require('dotenv').config()
 const port = process.env.PORT ?? 3001
 
+const data = {
+    username:"Abhi",
+    age:8,
+    email:"temp@email.com",
+    isActive:false
+}
 app.get("/",(req,res)=>{
     console.log(req)
     res.json({
@@ -18,6 +24,10 @@ app.get("/html",(req,res)=>{
         <p>abhinay</p>
         </div>
     `)
+})
+
+app.get("/user",(req,res)=>{
+    res.json(data)
 })
 
 app.listen(port,()=>{
