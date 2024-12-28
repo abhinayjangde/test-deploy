@@ -30,6 +30,13 @@ app.get("/user",(req,res)=>{
     res.json(data)
 })
 
+app.get("/chinki",async (req,res)=>{
+    let result = await fetch("https://api.github.com/users/chandanipatre")
+    let data = await result.json()
+    console.log(data)
+    res.json(data)
+})
+
 app.listen(port,()=>{
     console.log(`Server listening at http://localhost:${port}`)
 })
